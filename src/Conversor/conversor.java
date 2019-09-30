@@ -19,6 +19,8 @@ public class conversor {
         int euro = teclado.nextInt();
         double dollar = euro * 1.10;
         double yen = euro * 1.30;
+        System.out.println("Cuantos euros quieres cambiar");
         System.out.printf("%d euros son %.2f dolares y son %.2f yenes", euro, dollar,yen);
+        
     }
 }
