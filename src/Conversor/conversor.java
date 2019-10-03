@@ -15,12 +15,20 @@ public class conversor {
 
 
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
-        int euro = teclado.nextInt();
-        double dollar = euro * 1.10;
-        double yen = euro * 1.30;
-        System.out.println("Cuantos euros quieres cambiar");
-        System.out.printf("%d euros son %.2f dolares y son %.2f yenes", euro, dollar,yen);
+        final double EUR_DOLAR = 1.10;
+        final double EUR_LIBRA = 1.25;
+        final double EUR_YEN = 1.75;
+        double euros;
         
+  
+  Scanner teclado = new Scanner(System.in);
+        System.out.println("Introduce el valor que quieres convertir:");
+        euros = teclado.nextDouble();
+        double conDollar = euros * EUR_DOLAR;
+       double conLibra= euros * EUR_LIBRA;
+       double conYen= euros * EUR_YEN; 
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
     }
 }
